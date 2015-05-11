@@ -1,0 +1,24 @@
+---
+
+-
+  name: Prepare Homebrew root
+  file:
+    state=directory
+    path={{ homebrew.root }}
+    recurse=yes
+    group=admin
+    mode=g+rwx
+  sudo: yes
+
+-
+  name: Clone Homebrew
+  git:
+    repo=git://github.com/Homebrew/homebrew.git
+    dest={{ homebrew.root }}
+    depth=1
+    accept_hostkey=yes
+
+-
+  name: Update Homebrew
+  homebrew:
+    update_homebrew=yes
