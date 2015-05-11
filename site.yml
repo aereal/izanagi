@@ -4,3 +4,4 @@
   hosts: workstation
   roles:
     - homebrew
+    - mackerel-agent

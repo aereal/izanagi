@@ -1,0 +1,28 @@
+---
+
+-
+  name: Tap mackerelio/homebrew-mackerel-agent
+  homebrew_tap:
+    name=mackerelio/mackerel-agent
+
+-
+  name: Install mackerel-agent
+  homebrew:
+    name=mackerel-agent
+
+-
+  name: Install mackerel-agent.conf
+  template:
+    dest=/usr/local/etc/mackerel-agent.conf
+    src=mackerel-agent.conf.j2
+
+-
+  name: Install plist
+  file:
+    state=link
+    src=/usr/local/opt/mackerel-agent/homebrew.mxcl.mackerel-agent.plist
+    path=~/Library/LaunchAgents/homebrew.mxcl.mackerel-agent.plist
+
+-
+  name: Load plist
+  command: launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mackerel-agent.plist
