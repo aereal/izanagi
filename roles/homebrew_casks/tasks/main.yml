@@ -1,0 +1,8 @@
+---
+
+-
+  name: Install Cask
+  homebrew_cask:
+    state={{ item.state | default('present') }}
+    name={{ item.name }}
+  with_items: homebrew_cask.casks
