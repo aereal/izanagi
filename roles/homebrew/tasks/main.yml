@@ -17,8 +17,20 @@
     dest={{ homebrew.root }}
     depth=1
     accept_hostkey=yes
+    update=no
 
 -
   name: Update Homebrew
   homebrew:
     update_homebrew=yes
+
+-
+  name: Tap Homebrew Cask
+  homebrew_tap:
+    tap=caskroom/cask
+
+-
+  name: Install Homebrew Cask
+  homebrew:
+    name=brew-cask
+    state=latest
