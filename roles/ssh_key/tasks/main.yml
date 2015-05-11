@@ -1,0 +1,7 @@
+---
+
+-
+  name: Add SSH key
+  authorized_key:
+    key=https://github.com/aereal.keys
+    user=aereal
