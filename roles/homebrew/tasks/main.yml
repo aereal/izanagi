@@ -23,6 +23,7 @@
   name: Update Homebrew
   homebrew:
     update_homebrew=yes
+  when: update_homebrew | default(False)
 
 -
   name: Tap Homebrew Cask
