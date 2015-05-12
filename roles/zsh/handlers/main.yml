@@ -1,0 +1,13 @@
+---
+
+-
+  name: purge zsh completion cache
+  file:
+    state=absent
+    path=~/.zcompdump
+
+-
+  name: purge zsh completion cache
+  shell: "autoload -U compinit && compinit -C"
+  args:
+    executable: /usr/local/bin/zsh

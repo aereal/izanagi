@@ -8,6 +8,7 @@
     - homebrew
     - mackerel-agent
     - homebrew_packages
+    - zsh
     - homebrew_casks
     - karabiner
     - osx-defaults
