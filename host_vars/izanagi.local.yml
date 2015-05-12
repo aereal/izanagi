@@ -143,3 +143,7 @@ rbenv:
 plenv:
   versions:
     - 5.20.2
+
+aquaskk:
+  synced_dictionaries:
+    - /Users/aereal/Dropbox/skk/skk-jisyo.utf8
