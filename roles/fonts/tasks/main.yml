@@ -1,0 +1,10 @@
+---
+
+-
+  name: Install Homebrew Cask font
+  homebrew_tap: name=caskroom/fonts
+
+-
+  name: Install Fonts
+  homebrew_cask: name={{ item }}
+  with_items: fonts.casks

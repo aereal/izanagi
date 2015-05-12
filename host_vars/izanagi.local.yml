@@ -153,3 +153,17 @@ plenv:
 aquaskk:
   synced_dictionaries:
     - /Users/aereal/Dropbox/skk/skk-jisyo.utf8
+
+fonts:
+  casks:
+    - font-anonymous-pro
+    - font-camingocode
+    - font-fantasque-sans-mono
+    - font-fira-sans
+    - font-inconsolata-dz
+    - font-meslo-lg
+    - font-novamono
+    - font-oxygen-mono
+    - font-share-tech-mono
+    - font-source-code-pro
+    - font-ubuntu
