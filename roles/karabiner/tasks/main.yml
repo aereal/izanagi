@@ -1,0 +1,6 @@
+---
+
+-
+  name: Configure Karabiner
+  command: "/Applications/Karabiner.app/Contents/Library/bin/karabiner set {{ item.key }} {{ item.value }}"
+  with_dict: karabiner.config
