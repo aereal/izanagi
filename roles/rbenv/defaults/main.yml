@@ -1,0 +1,5 @@
+---
+
+rbenv:
+  repository: git://github.com/sstephenson/rbenv.git
+  versions: []

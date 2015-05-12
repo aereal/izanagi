@@ -135,3 +135,7 @@ osx_defaults:
       name: askForPasswordDelay
       type: float
       value: 0
+
+rbenv:
+  versions:
+    - 2.2.1

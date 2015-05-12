@@ -1,0 +1,28 @@
+---
+
+-
+  name: Install rbenv
+  homebrew:
+    name=rbenv
+    state=latest
+
+-
+  name: Install ruby-build
+  homebrew:
+    name=ruby-build
+    state=latest
+
+-
+  name: Install Ruby
+  command: rbenv install --skip-existing --keep {{ item }}
+  with_items: rbenv.versions
+
+-
+  name: Install Bundler
+  gem:
+    name=bundler
+    state=latest
+    executable="rbenv exec gem"
+  environment:
+    RBENV_VERSION: "{{ item }}"
+  with_items: rbenv.versions
