@@ -18,12 +18,8 @@ homebrew_packages:
     - name: proctools
     - name: tmux
     - name: the_silver_searcher
-    - name: zsh-completions
     - name: pstree
     - name: proxychains-ng
-    -
-      name: zsh
-      install_options: --disable-etcdir
     -
       name: reattach-to-user-namespace
       install_options: --with-wrap-launchctl --with-wrap-pbcopy-and-pbpaste
