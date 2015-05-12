@@ -1,0 +1,12 @@
+---
+
+-
+  name: Apply defaults
+  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value}}"
+  with_items: osx_defaults.others
+
+-
+  name: Apply Dock defaults
+  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value }}"
+  with_items: osx_defaults.dock
+  notify: restart Dock
