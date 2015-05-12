@@ -136,6 +136,11 @@ osx_defaults:
       name: askForPasswordDelay
       type: float
       value: 0
+    -
+      domain: com.apple.universalaccess
+      name: mouseDriverCursorSize
+      type: int
+      value: 4
 
 rbenv:
   versions:
