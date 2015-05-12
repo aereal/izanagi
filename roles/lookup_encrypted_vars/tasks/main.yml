@@ -1,0 +1,5 @@
+---
+
+-
+  include_vars: "vars_files/encrypted.{{ item }}.yml"
+  with_items: play_hosts

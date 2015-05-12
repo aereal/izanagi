@@ -4,6 +4,7 @@
   hosts: workstation
   gather_facts: no
   roles:
+    - lookup_encrypted_vars
     - homebrew
     - mackerel-agent
     - homebrew_packages
