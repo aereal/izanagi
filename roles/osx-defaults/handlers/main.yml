@@ -3,3 +3,7 @@
 -
   name: restart Dock
   command: killall Dock
+
+-
+  name: restart SystemUIServer
+  command: killall SystemUIServer

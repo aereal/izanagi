@@ -10,3 +10,9 @@
   command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value }}"
   with_items: osx_defaults.dock
   notify: restart Dock
+
+-
+  name: Apply System UI Server defaults
+  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value }}"
+  with_items: osx_defaults.systemui
+  notify: restart SystemUIServer

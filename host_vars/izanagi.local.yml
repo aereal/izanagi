@@ -74,17 +74,23 @@ osx_defaults:
       name: persistent-apps
       type: array
       value:
+  systemui:
+    -
+      domain: com.apple.menuextra.battery
+      name: ShowPercent
+      type: bool
+      value: true
+    -
+      domain: -g
+      name: AppleEnableMenuBarTransparency
+      type: bool
+      value: false
   others:
     -
       domain: -g
       name: AppleKeyboardUIMode
       type: float
       value: 3
-    -
-      domain: -g
-      name: AppleEnableMenuBarTransparency
-      type: bool
-      value: false
     -
       domain: -g
       name: NSNavPanelExpandedStateForSaveMode
@@ -118,11 +124,6 @@ osx_defaults:
     -
       domain: com.apple.desktopservices
       name: DSDontWriteNetworkStores
-      type: bool
-      value: true
-    -
-      domain: com.apple.menuextra.battery
-      name: ShowPercent
       type: bool
       value: true
     -
