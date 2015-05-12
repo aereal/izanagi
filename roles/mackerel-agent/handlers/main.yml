@@ -1,0 +1,5 @@
+---
+
+-
+  name: restart mackerel-agent
+  command: launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mackerel-agent.plist
