@@ -10,6 +10,7 @@
     - homebrew_packages
     - zsh
     - rbenv
+    - plenv
     - homebrew_casks
     - karabiner
     - osx-defaults

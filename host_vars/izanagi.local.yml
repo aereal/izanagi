@@ -139,3 +139,7 @@ osx_defaults:
 rbenv:
   versions:
     - 2.2.1
+
+plenv:
+  versions:
+    - 5.20.2

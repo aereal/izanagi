@@ -1,0 +1,26 @@
+---
+
+-
+  name: Install plenv
+  homebrew:
+    name=plenv
+    state=latest
+
+-
+  name: Instal perl-build
+  homebrew:
+    name=perl-build
+    state=latest
+
+-
+  name: Install Perl
+  command: plenv install {{ item }}
+  with_items: plenv.versions
+
+-
+  name: Install cpanminus
+  command: plenv install-cpanm
+  environment:
+    PLENV_VERSION: "{{ item }}"
+    PERL_CPANM_OPT: '--notest'
+  with_items: plenv.versions
