@@ -89,7 +89,7 @@ osx_defaults:
     -
       domain: -g
       name: AppleKeyboardUIMode
-      type: float
+      type: int
       value: 3
     -
       domain: -g
@@ -119,8 +119,8 @@ osx_defaults:
     -
       domain: -g
       name: com.apple.keyboard.fnState
-      type: int
-      value: 1
+      type: bool
+      value: true
     -
       domain: com.apple.desktopservices
       name: DSDontWriteNetworkStores
