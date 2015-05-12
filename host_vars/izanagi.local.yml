@@ -1,0 +1,141 @@
+---
+
+homebrew_cask:
+  casks:
+    - name: dropbox
+    - name: alfred
+    - name: iterm2
+    - name: karabiner
+    - name: slack
+    - name: slate
+    - name: limechat
+
+homebrew_packages:
+  packages:
+    - name: openssl
+    - name: coreutils
+    - name: direnv
+    - name: proctools
+    - name: tmux
+    - name: the_silver_searcher
+    - name: zsh-completions
+    - name: pstree
+    - name: proxychains-ng
+    -
+      name: zsh
+      install_options: --disable-etcdir
+    -
+      name: reattach-to-user-namespace
+      install_options: --with-wrap-launchctl --with-wrap-pbcopy-and-pbpaste
+    -
+      name: git
+      install_options: --with-brewed-openssl --with-pcre
+    -
+      name: macvim
+      install_options: --with-lua --with-luajit
+
+mackerel_agent:
+  root: /usr/local/var/mackerel-agent
+  pidfile: /usr/local/var/mackerel-agent/pid
+
+karabiner:
+  config:
+    repeat.initial_wait: 50
+    repeat.wait: 20
+    remap.space2shiftL_space_keyrepeat: 1
+    option.emacsmode_controlM: 1
+    remap.swapcolons: 1
+
+osx_defaults:
+  dock:
+    -
+      domain: com.apple.dock
+      name: autohide
+      type: bool
+      value: true
+    -
+      domain: com.apple.dock
+      name: autohide-delay
+      type: float
+      value: 0
+    -
+      domain: com.apple.dock
+      name: showhidden
+      type: bool
+      value: true
+    -
+      domain: com.apple.dock
+      name: mouse-over-hilite-stack
+      type: bool
+      value: true
+    -
+      domain: com.apple.dock
+      name: expose-animation-duration
+      type: float
+      value: 0.1
+    -
+      domain: com.apple.dock
+      name: persistent-apps
+      type: array
+      value:
+  others:
+    -
+      domain: -g
+      name: AppleKeyboardUIMode
+      type: float
+      value: 3
+    -
+      domain: -g
+      name: AppleEnableMenuBarTransparency
+      type: bool
+      value: false
+    -
+      domain: -g
+      name: NSNavPanelExpandedStateForSaveMode
+      type: bool
+      value: true
+    -
+      domain: -g
+      name: NSAutomaticSpellingCorrectionEnabled
+      type: bool
+      value: false
+    -
+      domain: -g
+      name: NSAutomaticSubstitutionEnabled
+      type: bool
+      value: false
+    -
+      domain: -g
+      name: NSAutomaticQuoteSubstitutionEnabled
+      type: bool
+      value: false
+    -
+      domain: -g
+      name: NSAutomaticDashSubstitutionEnabled
+      type: bool
+      value: false
+    -
+      domain: -g
+      name: com.apple.keyboard.fnState
+      type: int
+      value: 1
+    -
+      domain: com.apple.desktopservices
+      name: DSDontWriteNetworkStores
+      type: bool
+      value: true
+    -
+      domain: com.apple.menuextra.battery
+      name: ShowPercent
+      type: bool
+      value: true
+    -
+      domain: com.apple.screensaver
+      name: askForPassword
+      type: bool
+      value: true
+    -
+      domain: com.apple.screensaver
+      name: askForPasswordDelay
+      type: float
+      value: 0
