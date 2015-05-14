@@ -2,17 +2,29 @@
 
 -
   name: Apply defaults
-  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value}}"
+  defaults:
+    domain: "{{ item.domain }}"
+    name: "{{ item.name }}"
+    type: "{{ item.type | default('string') }}"
+    value: "{{ item.value }}"
   with_items: osx_defaults.others
 
 -
   name: Apply Dock defaults
-  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value }}"
+  defaults:
+    domain: "{{ item.domain }}"
+    name: "{{ item.name }}"
+    type: "{{ item.type | default('string') }}"
+    value: "{{ item.value }}"
   with_items: osx_defaults.dock
   notify: restart Dock
 
 -
   name: Apply System UI Server defaults
-  command: "defaults write {{ item.domain }} {{ item.name }} -{{ item.type | default('string') }} {{ item.value }}"
+  defaults:
+    domain: "{{ item.domain }}"
+    name: "{{ item.name }}"
+    type: "{{ item.type | default('string') }}"
+    value: "{{ item.value }}"
   with_items: osx_defaults.systemui
   notify: restart SystemUIServer
