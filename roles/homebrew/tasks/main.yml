@@ -3,35 +3,35 @@
 -
   name: Prepare Homebrew root
   file:
-    state=directory
-    path={{ homebrew.root }}
-    recurse=yes
-    group=admin
-    mode=g+rwx
+    state: directory
+    path: "{{ homebrew.root }}"
+    recurse: yes
+    group: admin
+    mode: g+rwx
   sudo: yes
 
 -
   name: Clone Homebrew
   git:
-    repo=git://github.com/Homebrew/homebrew.git
-    dest={{ homebrew.root }}
-    depth=1
-    accept_hostkey=yes
-    update=no
+    repo: git://github.com/Homebrew/homebrew.git
+    dest: "{{ homebrew.root }}"
+    depth: 1
+    accept_hostkey: yes
+    update: no
 
 -
   name: Update Homebrew
   homebrew:
-    update_homebrew=yes
+    update_homebrew: yes
   when: update_homebrew | default(False)
 
 -
   name: Tap Homebrew Cask
   homebrew_tap:
-    tap=caskroom/cask
+    tap: caskroom/cask
 
 -
   name: Install Homebrew Cask
   homebrew:
-    name=brew-cask
-    state=latest
+    name: brew-cask
+    state: latest

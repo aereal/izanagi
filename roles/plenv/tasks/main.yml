@@ -3,14 +3,14 @@
 -
   name: Install plenv
   homebrew:
-    name=plenv
-    state=latest
+    name: plenv
+    state: latest
 
 -
   name: Instal perl-build
   homebrew:
-    name=perl-build
-    state=latest
+    name: perl-build
+    state: latest
 
 -
   name: Install Perl

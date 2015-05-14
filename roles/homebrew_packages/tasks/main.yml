@@ -1,9 +1,15 @@
 ---
 
 -
+  name: Install Taps
+  homebrew_tap:
+    name: "{{ item }}"
+  with_items: homebrew_packages.taps
+
+-
   name: Install packages
   homebrew:
-    name={{ item.name }}
-    state={{ item.state | default('present') }}
-    install_options="{{ item.install_options | default('') }}"
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+    install_options: "{{ item.install_options | default('') }}"
   with_items: homebrew_packages.packages

@@ -3,21 +3,21 @@
 -
   name: Install zsh via Homebrew
   homebrew:
-    state=latest
-    name=zsh
-    install_options=--disable-etcdir
+    state: latest
+    name: zsh
+    install_options: --disable-etcdir
 
 -
   name: Install zsh-completions
   homebrew:
-    state=latest
-    name=zsh-completions
+    state: latest
+    name: zsh-completions
   notify:
     - purge zsh completion cache
 
 -
   name: Append installed zsh to /etc/shells
   lineinfile:
-    dest=/etc/shells
-    line=/usr/local/bin/zsh
+    dest: /etc/shells
+    line: /usr/local/bin/zsh
   sudo: yes

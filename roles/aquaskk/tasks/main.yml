@@ -2,24 +2,26 @@
 
 -
   name: Install Tap
-  homebrew_tap: name=aereal/aereal_casks
+  homebrew_tap:
+    name: aereal/aereal_casks
 
 -
   name: Install AquaSKK
-  homebrew_cask: name=aquaskk
+  homebrew_cask:
+    name: aquaskk
 
 -
   name: Create AquaSKK directory
   file:
-    state=directory
-    path="/Users/aereal/Library/Application Support/AquaSKK"
-    owner=aereal
-    group=staff
+    state: directory
+    path: "/Users/aereal/Library/Application Support/AquaSKK"
+    owner: aereal
+    group: staff
 
 -
   name: Copy dictionary files
   file:
-    state=link
-    path="/Users/aereal/Library/Application Support/AquaSKK/{{ item | basename }}"
-    src="{{ item }}"
+    state: link
+    path: "/Users/aereal/Library/Application Support/AquaSKK/{{ item | basename }}"
+    src: "{{ item }}"
   with_items: aquaskk.synced_dictionaries
