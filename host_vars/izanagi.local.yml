@@ -1,5 +1,9 @@
 ---
 
+user:
+  name: aereal
+  group: staff
+
 homebrew_cask:
   casks:
     - name: dropbox

@@ -14,14 +14,14 @@
   name: Create AquaSKK directory
   file:
     state: directory
-    path: "/Users/aereal/Library/Application Support/AquaSKK"
-    owner: aereal
-    group: staff
+    path: "/Users/{{ user.name }}/Library/Application Support/AquaSKK"
+    owner: "{{ user.name }}"
+    group: "{{ user.group }}"
 
 -
   name: Copy dictionary files
   file:
     state: link
-    path: "/Users/aereal/Library/Application Support/AquaSKK/{{ item | basename }}"
+    path: "/Users/{{ user.name }}/Library/Application Support/AquaSKK/{{ item | basename }}"
     src: "{{ item }}"
   with_items: aquaskk.synced_dictionaries
