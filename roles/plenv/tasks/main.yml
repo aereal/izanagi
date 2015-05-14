@@ -22,6 +22,8 @@
 -
   name: Install cpanminus
   command: plenv install-cpanm
+  args:
+    creates: "/Users/{{ user.name }}/.plenv/shims/cpanm"
   environment:
     PLENV_VERSION: "{{ item }}"
     PERL_CPANM_OPT: '--notest'
