@@ -26,13 +26,20 @@ homebrew_packages:
     - name: proxychains-ng
     -
       name: reattach-to-user-namespace
-      install_options: --with-wrap-launchctl --with-wrap-pbcopy-and-pbpaste
+      install_options:
+        - with-wrap-launchctl
+        - with-wrap-pbcopy-and-pbpaste
     -
       name: git
-      install_options: --with-brewed-openssl --with-pcre
+      install_options:
+        - with-brewed-openssl
+        - with-pcre
     -
       name: macvim
-      install_options: --with-lua --with-luajit
+      install_options:
+        - with-lua
+        - with-luajit
+        - override-system-vim
 
 mackerel_agent:
   root: /usr/local/var/mackerel-agent
