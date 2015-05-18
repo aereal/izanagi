@@ -37,6 +37,12 @@ homebrew_packages:
 mackerel_agent:
   root: /usr/local/var/mackerel-agent
   pidfile: /usr/local/var/mackerel-agent/pid
+  plugins:
+    -
+      formula:
+        name: mackerel-agent-osx-plugins
+      metric_name: macbook-battery
+      command: ruby /usr/local/bin/mackerel-plugin-osx-battery
 
 karabiner:
   config:

@@ -8,9 +8,22 @@
 -
   name: Install mackerel-agent
   homebrew:
+    state: latest
     name: mackerel-agent
   notify:
     - restart mackerel-agent
+
+-
+  name: Install mackerel plugins Tap
+  homebrew_tap:
+    name: aereal/unofficial-osx-mackerel-plugins
+
+-
+  name: Install mackerel plugins
+  homebrew:
+    name: "{{ item.formula.name }}"
+    state: "{{ item.formula.state }}"
+  with_items: mackerel_agent.plugins
 
 -
   name: Install mackerel-agent.conf
