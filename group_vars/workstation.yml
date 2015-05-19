@@ -30,11 +30,6 @@ homebrew_packages:
         - with-wrap-launchctl
         - with-wrap-pbcopy-and-pbpaste
     -
-      name: git
-      install_options:
-        - with-brewed-openssl
-        - with-pcre
-    -
       name: macvim
       install_options:
         - with-lua

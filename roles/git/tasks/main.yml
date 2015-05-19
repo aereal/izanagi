@@ -1,0 +1,19 @@
+---
+
+-
+  name: Install Git
+  homebrew:
+    name: git
+    state: latest
+    install_options:
+      - with-brewed-openssl
+      - with-pcre
+      - without-completions
+
+-
+  name: Install git-diff-highlight
+  file:
+    dest: /usr/local/bin/git-diff-highlight
+    state: link
+    force: yes
+    src: /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight

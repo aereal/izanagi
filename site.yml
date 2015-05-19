@@ -8,6 +8,7 @@
     - mackerel-agent
     - homebrew_packages
     - zsh
+    - git
     - rbenv
     - plenv
     - homebrew_casks
