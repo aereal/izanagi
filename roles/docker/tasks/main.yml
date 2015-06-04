@@ -1,0 +1,16 @@
+---
+
+-
+  name: Install Docker
+  homebrew:
+    name: docker
+
+-
+  name: Install docker-compose
+  homebrew:
+    name: docker-compose
+
+-
+  name: Install docker-machine
+  homebrew:
+    name: docker-machine
