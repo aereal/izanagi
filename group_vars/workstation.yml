@@ -169,14 +169,20 @@ aquaskk:
 
 fonts:
   casks:
+    - font-anka-coder
     - font-anonymous-pro
     - font-camingocode
+    - font-cousine
+    - font-edlo
     - font-fantasque-sans-mono
     - font-fira-sans
+    - font-hermit
     - font-inconsolata-dz
+    - font-m-plus
     - font-meslo-lg
     - font-novamono
     - font-oxygen-mono
+    - font-roboto-mono
     - font-share-tech-mono
     - font-source-code-pro
     - font-ubuntu
