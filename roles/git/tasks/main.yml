@@ -8,7 +8,6 @@
     install_options:
       - with-brewed-openssl
       - with-pcre
-      - without-completions
 
 -
   name: Install git-diff-highlight
