@@ -175,11 +175,14 @@ fonts:
     - font-cousine
     - font-edlo
     - font-fantasque-sans-mono
-    - font-fira-sans
+    - font-fira-mono
     - font-hermit
     - font-inconsolata-dz
+    - font-input
+    - font-mensch
     - font-m-plus
     - font-meslo-lg
+    - font-monoid
     - font-novamono
     - font-oxygen-mono
     - font-roboto-mono
