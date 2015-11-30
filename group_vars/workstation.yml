@@ -12,7 +12,6 @@ homebrew_cask:
     - name: karabiner
     - name: slack
     - name: slate
-    - name: limechat
     - name: virtualbox
 
 homebrew_packages:
