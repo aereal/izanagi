@@ -6,8 +6,8 @@ user:
 
 homebrew_cask:
   casks:
-    - name: dropbox
     - name: alfred
+    - name: dropbox
     - name: iterm2
     - name: karabiner
     - name: slack
@@ -24,6 +24,7 @@ homebrew_packages:
     - name: the_silver_searcher
     - name: pstree
     - name: proxychains-ng
+    - name: tig
     -
       name: reattach-to-user-namespace
       install_options:
