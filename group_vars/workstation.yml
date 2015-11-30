@@ -44,6 +44,7 @@ mackerel_agent:
     -
       formula:
         name: mackerel-agent-osx-plugins
+        state: head
       metric_name: macbook-battery
       command: ruby /usr/local/bin/mackerel-plugin-osx-battery
 
