@@ -1,7 +1,7 @@
 pidfile = "{{ mackerel_agent.pidfile }}"
 root = "{{ mackerel_agent.root }}"
 verbose = true
-apikey = "{{ encrypted.mackerel_agent.apikey }}"
+apikey = "{{ mackerel_agent_apikey }}"
 
 {% for plugin in mackerel_agent.plugins %}
 [plugin.metrics.{{ plugin.metric_name }}]
