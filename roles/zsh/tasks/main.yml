@@ -8,6 +8,15 @@
     install_options: --disable-etcdir
 
 -
+  name: Install zsh plugins
+  homebrew:
+    state: latest
+    name: "{{ item }}"
+  with_items:
+    - zsh-history-substring-search
+    - zsh-syntax-highlighting
+
+-
   name: Install zsh-completions
   homebrew:
     state: latest
