@@ -35,6 +35,9 @@ homebrew_packages:
     - name: peco
     - name: tree
     - name: wget
+    - name: highlight # for Keynote
+    - name: jq
+    - name: slackcat
     -
       name: reattach-to-user-namespace
       install_options:
