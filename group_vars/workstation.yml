@@ -8,7 +8,9 @@ homebrew_cask:
   casks:
     - name: alfred
     - name: dropbox
+    - name: intellij-idea-ce
     - name: iterm2
+    - name: java
     - name: karabiner
     - name: slack
     - name: slate
