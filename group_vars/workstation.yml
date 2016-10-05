@@ -8,6 +8,7 @@ homebrew_cask:
   casks:
     - name: alfred
     - name: dropbox
+    - name: gyazo
     - name: intellij-idea-ce
     - name: iterm2
     - name: java
