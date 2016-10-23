@@ -14,7 +14,7 @@ homebrew_cask:
     - name: java
     - name: karabiner
     - name: slack
-    - name: slate
+    - name: mattr-slate
     - name: macvim-kaoriya
 
 homebrew_packages:

@@ -1,6 +1,11 @@
 ---
 
 -
+  name: Tap caskroom/versions
+  homebrew_tap:
+    name: 'caskroom/versions'
+
+-
   name: Install Cask
   homebrew_cask:
     state={{ item.state | default('present') }}
