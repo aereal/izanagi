@@ -26,12 +26,6 @@
   when: update_homebrew | default(False)
 
 -
-  name: Tap Homebrew Cask
+  name: Tap services
   homebrew_tap:
-    tap: caskroom/cask
-
--
-  name: Install Homebrew Cask
-  homebrew:
-    name: brew-cask
-    state: latest
+    tap: homebrew/services
