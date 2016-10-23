@@ -15,6 +15,7 @@ homebrew_cask:
     - name: karabiner
     - name: slack
     - name: slate
+    - name: macvim-kaoriya
 
 homebrew_packages:
   taps:
@@ -43,12 +44,6 @@ homebrew_packages:
       install_options:
         - with-wrap-launchctl
         - with-wrap-pbcopy-and-pbpaste
-    -
-      name: macvim
-      install_options:
-        - with-lua
-        - with-luajit
-        - override-system-vim
 
 mackerel_agent:
   root: /usr/local/var/mackerel-agent
